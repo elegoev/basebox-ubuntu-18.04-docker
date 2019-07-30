@@ -1,24 +1,24 @@
-## ubuntu-18.04
+## ubuntu-18.04-docker
 Vagrant Box with Ubuntu 18.04
 
-### Base image
-Used base image [bento/ubuntu-18.04](https://app.vagrantup.com/bento/boxes/ubuntu-18.04)
+#### Base image
+Used base image [elegoev/ubuntu-18.04](https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04)
 
-### Automatic provisioning
-The base image is provisioned with bash script [ubuntu-18.04.sh](https://github.com/elegoev/vagrant-ubuntu1804/blob/master/provisioning/ubuntu-18.04.sh)
+#### Automatic provisioning
+The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://github.com/elegoev/vagrant-ubuntu/blob/master/vagrant-ubuntu1804-docker/provisioning/ubuntu-18.04-docker.sh)
 
 ###  Create Vagrant Box Environment
 #### Provider "virtualbox"
 1. Create directory `mkdir "name of directory"`
 1. Goto directory `cd "name of directory"`
-1. Create Vagrantfile `vagarnt init "elegoev/ubuntu-18.04"`
+1. Create Vagrantfile `vagarnt init "elegoev/ubuntu-18.04-docker"`
 1. Start vagrant box `vagrant up`
 
 #### Provider "vmware_esxi"
 1. Create directory `mkdir "name of directory"`
 1. Goto directory `cd "name of directory"`
-1. Download basebox `vagrant box add "elegoev/ubuntu-18.04" --provider vmware_esxi`
-1. Create Vagrantfile `vagrant init "elegoev/ubuntu-18.04"`
+1. Download basebox `vagrant box add "elegoev/ubuntu-18.04-docker" --provider vmware_esxi`
+1. Create Vagrantfile `vagrant init "elegoev/ubuntu-18.04-docker"`
 1. Create file `metadata.json`
 ```json
 {
@@ -45,10 +45,10 @@ The base image is provisioned with bash script [ubuntu-18.04.sh](https://github.
 Repository follows sematic versioning  [![](https://img.shields.io/badge/semver-2.0.0-green.svg)](http://semver.org)
 
 ### Changelog
-For all notable changes see [CHANGELOG](https://github.com/elegoev/basebox-ubuntu-18.04/blob/master/CHANGELOG.md)
+For all notable changes see [CHANGELOG](https://github.com/elegoev/basebox-ubuntu-18.04-docker/blob/master/CHANGELOG.md)
 
 ### License
-Licensed under The MIT License (MIT) - for the full copyright and license information, please view the [LICENSE](https://github.com/elegoev/basebox-ubuntu-18.04/blob/master/LICENSE) file.
+Licensed under The MIT License (MIT) - for the full copyright and license information, please view the [LICENSE](https://github.com/elegoev/basebox-ubuntu-18.04-docker/blob/master/LICENSE) file.
 
 ### Issue Reporting
-Any and all feedback is welcome.  Please let me know of any issues you may find in the bug tracker on github. You can find it [here. ](https://github.com/elegoev/basebox-ubuntu-18.04/issues)
+Any and all feedback is welcome.  Please let me know of any issues you may find in the bug tracker on github. You can find it [here. ](https://github.com/elegoev/basebox-ubuntu-18.04-docker/issues)

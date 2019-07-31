@@ -12,7 +12,7 @@ sudo systemctl enable docker
 
 # add vagrant user to docker group
 sudo groupadd docker
-sudo gpasswd -a $USER docker
+sudo gpasswd -a vagrant docker
 
 # create date string
 DATE=`date +%Y%m%d%H%M`

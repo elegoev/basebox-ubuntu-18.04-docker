@@ -10,6 +10,10 @@ sudo apt install -y docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 
+# add vagrant user to docker group
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+
 # create date string
 DATE=`date +%Y%m%d%H%M`
 

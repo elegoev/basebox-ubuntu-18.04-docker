@@ -1,5 +1,5 @@
 ## ubuntu-18.04-docker
-Vagrant Box with Ubuntu 18.04
+Vagrant Box with Ubuntu 18.04 & docker
 
 #### Base image
 Used base image [elegoev/ubuntu-18.04](https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04)

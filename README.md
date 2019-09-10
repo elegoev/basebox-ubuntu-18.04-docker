@@ -5,7 +5,7 @@ Vagrant Box with Ubuntu 18.04 & docker
 Used base image [elegoev/ubuntu-18.04](https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04)
 
 ### Automatic provisioning
-The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://github.com/elegoev/vagrant-ubuntu/blob/master/vagrant-ubuntu1804-docker/provisioning/ubuntu-18.04-docker.sh)
+The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://github.com/elegoev/vagrant-ubuntu1804-docker/blob/master/provisioning/ubuntu-18.04-docker.sh)
 
 ### References
 - [Used Vagrantfile for Basebox](https://github.com/elegoev/vagrant-ubuntu-18.04/blob/master/jenkins/vagrant/esxi/_Vagrantfile)

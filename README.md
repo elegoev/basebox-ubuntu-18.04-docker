@@ -9,6 +9,7 @@ The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://
 
 ### References
 - [Used Vagrantfile for Basebox](https://github.com/elegoev/vagrant-ubuntu-18.04/blob/master/jenkins/vagrant/esxi/_Vagrantfile)
+- [Deploy Your Own DNS Server With Docker](https://blog.programster.org/deploy-your-own-dns-server)
 
 ###  Create Vagrant Box Environment
 #### Provider "virtualbox"

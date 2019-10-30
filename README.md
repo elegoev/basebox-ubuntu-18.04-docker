@@ -8,7 +8,6 @@ Used base image [elegoev/ubuntu-18.04](https://app.vagrantup.com/elegoev/boxes/u
 The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://github.com/elegoev/basebox-ubuntu-18.04-docker/blob/master/provisioning/ubuntu-18.04-docker.sh)
 
 ### References
-- [Used Vagrantfile for Basebox](https://github.com/elegoev/vagrant-ubuntu-18.04/blob/master/jenkins/vagrant/esxi/_Vagrantfile)
 - [Deploy Your Own DNS Server With Docker](https://blog.programster.org/deploy-your-own-dns-server)
 
 ###  Create Vagrant Box Environment

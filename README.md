@@ -10,6 +10,15 @@ The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://
 ### References
 - [Deploy Your Own DNS Server With Docker](https://blog.programster.org/deploy-your-own-dns-server)
 
+### Configuration
+#### Required Vagrant Plugins
+- vagrant-disksize
+- vagrant-hosts
+- vagrant-secret
+- vagrant-share
+- vagrant-vbguest
+- vagrant-vmware-esxi
+
 ###  Create Vagrant Box Environment
 #### Provider "virtualbox"
 1. Create directory `mkdir "name of directory"`

@@ -25,7 +25,7 @@ The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://
 - vagrant-vbguest
 - vagrant-vmware-esxi
 
-##  Create Vagrant Box Environment
+## Create Vagrant Box Environment
 
 ### Provider "virtualbox"
 

@@ -1,17 +1,23 @@
-## ubuntu-18.04-docker
+# ubuntu-18.04-docker
+
 Vagrant Box with Ubuntu 18.04 & docker
 
-### Base image
+## Base image
+
 Used base image [elegoev/ubuntu-18.04](https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04)
 
-### Automatic provisioning
+## Automatic provisioning
+
 The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://github.com/elegoev/basebox-ubuntu-18.04-docker/blob/master/provisioning/ubuntu-18.04-docker.sh)
 
-### References
+## References
+
 - [Deploy Your Own DNS Server With Docker](https://blog.programster.org/deploy-your-own-dns-server)
 
-### Configuration
-#### Required Vagrant Plugins
+## Configuration
+
+### Required Vagrant Plugins
+
 - vagrant-disksize
 - vagrant-hosts
 - vagrant-secret
@@ -19,14 +25,17 @@ The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://
 - vagrant-vbguest
 - vagrant-vmware-esxi
 
-###  Create Vagrant Box Environment
-#### Provider "virtualbox"
+##  Create Vagrant Box Environment
+
+### Provider "virtualbox"
+
 1. Create directory `mkdir "name of directory"`
 1. Goto directory `cd "name of directory"`
 1. Create Vagrantfile `vagrant init "elegoev/ubuntu-18.04-docker"`
 1. Start vagrant box `vagrant up`
 
-#### Provider "vmware_esxi"
+### Provider "vmware_esxi"
+
 1. Create directory `mkdir "name of directory"`
 1. Goto directory `cd "name of directory"`
 1. Download basebox `vagrant box add "elegoev/ubuntu-18.04-docker" --provider vmware_esxi`
@@ -38,14 +47,18 @@ The base image is provisioned with bash script [ubuntu-18.04-docker.sh](https://
 1. Copy and edit [`box.json`](https://github.com/elegoev/vagrant-ubuntu-18.04-images/blob/master/jenkins/vagrant/box.json)
 1. Start vagrant box `vagrant up --provider vmware_esxi`
 
-### Versioning
-Repository follows sematic versioning  [![](https://img.shields.io/badge/semver-2.0.0-green.svg)](http://semver.org)
+## Versioning
 
-### Changelog
+Repository follows sematic versioning  [![semver](https://img.shields.io/badge/semver-2.0.0-green.svg)](http://semver.org)
+
+## Changelog
+
 For all notable changes see [CHANGELOG](https://github.com/elegoev/basebox-ubuntu-18.04-docker/blob/master/CHANGELOG.md)
 
-### License
+## License
+
 Licensed under The MIT License (MIT) - for the full copyright and license information, please view the [LICENSE](https://github.com/elegoev/basebox-ubuntu-18.04-docker/blob/master/LICENSE) file.
 
-### Issue Reporting
-Any and all feedback is welcome.  Please let me know of any issues you may find in the bug tracker on github. You can find it [here. ](https://github.com/elegoev/basebox-ubuntu-18.04-docker/issues)
+## Issue Reporting
+
+Any and all feedback is welcome.  Please let me know of any issues you may find in the bug tracker on github. You can find it [here.](https://github.com/elegoev/basebox-ubuntu-18.04-docker/issues)

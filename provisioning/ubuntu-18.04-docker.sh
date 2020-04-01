@@ -19,4 +19,4 @@ DATE=`date +%Y%m%d%H%M`
 
 # get docker version
 DOCKER_VERSION=$(docker version --format '{{.Server.Version}}')
-echo "$DOCKER_VERSION" > /vagrant/version
+echo "docker-$DOCKER_VERSION" > /vagrant/version

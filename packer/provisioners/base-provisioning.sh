@@ -15,7 +15,7 @@ sudo groupadd docker
 sudo gpasswd -a vagrant docker
 
 # get docker version
-DOCKER_VERSION=$(docker version --format '{{.Server.Version}}')
+DOCKER_VERSION=$(sudo docker version --format '{{.Server.Version}}')
 echo "# Installed application "  > $application_file_path
 echo "***                     " >> $application_file_path
 echo "> docker $DOCKER_VERSION" >> $application_file_path

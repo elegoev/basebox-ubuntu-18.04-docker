@@ -10,4 +10,5 @@
 
 **Implemented enhancements:**
 
+- Install Docker (docker.io)
 - Packer build implemented

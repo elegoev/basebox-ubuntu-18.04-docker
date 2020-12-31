@@ -1,3 +1,3 @@
 # Installed application 
 ***                     
-> docker 19.03.6
+> docker 20.10.1

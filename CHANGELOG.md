@@ -10,5 +10,11 @@
 
 **Implemented enhancements:**
 
-- Install Docker (docker.io)
+- Install Docker 19.x
 - Packer build implemented
+
+## 3.0.x
+
+**Implemented enhancements:**
+
+- Install Docker 20.x

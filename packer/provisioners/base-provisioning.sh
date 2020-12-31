@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ubuntu provisioning file
+application_file_path="/vagrant/installed-application.md"
 
 # install docker
 sudo apt update
@@ -14,9 +14,8 @@ sudo systemctl enable docker
 sudo groupadd docker
 sudo gpasswd -a vagrant docker
 
-# create date string
-DATE=`date +%Y%m%d%H%M`
-
 # get docker version
 DOCKER_VERSION=$(docker version --format '{{.Server.Version}}')
-echo "docker-$DOCKER_VERSION" > /vagrant/version
+echo "# Installed application "  > $application_file_path
+echo "***                     " >> $application_file_path
+echo "> docker $DOCKER_VERSION" >> $application_file_path

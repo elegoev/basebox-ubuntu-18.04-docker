@@ -1,5 +1,13 @@
 # Change Log
 
-## 1.0.0
+## x.x.x
+
 **Implemented enhancements:**
-- Initial version
+
+- Docker installation
+
+## 2.0.x
+
+**Implemented enhancements:**
+
+- Packer build implemented

@@ -43,6 +43,12 @@
       "inspec_env_vars": [ "CHEF_LICENSE=accept"],
       "extra_arguments": [ "--reporter", "cli", "html2:.{{user `inspec_report`}}" ],
       "profile": "./inspec/{{user `inspec_profile`}}"
+    },
+    {
+      "type": "inspec",
+      "inspec_env_vars": [ "CHEF_LICENSE=accept"],
+      "extra_arguments": [ "--reporter", "cli", "html2:.{{user `inspec_cis_report`}}" ],
+      "profile": "https://github.com/dev-sec/cis-docker-benchmark"
     }
   ],
   "post-processors": [

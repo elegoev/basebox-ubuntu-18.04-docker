@@ -1,3 +1,3 @@
-# Inspec `baseline-ubuntu-18.04-dnsmasq` Profile
+# Inspec `baseline-ubuntu-18.04-docker` Profile
 
-Inspec profile for basebox-ubuntu-18.04-dnsmasq
+Inspec profile for basebox-ubuntu-18.04-docker

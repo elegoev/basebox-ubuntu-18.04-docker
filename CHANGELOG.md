@@ -6,14 +6,14 @@
 
 - Docker installation
 
-## 2.0.x
+## 3.0.x
 
 **Implemented enhancements:**
 
 - Install Docker 19.x
 - Packer build implemented
 
-## 3.0.x
+## 4.0.x
 
 **Implemented enhancements:**
 

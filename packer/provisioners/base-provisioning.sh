@@ -1,7 +1,6 @@
 #!/bin/bash
 
 application_file_path="/vagrant/installed-application.md"
-docker_version="5:19.03.15~3-0~ubuntu-bionic"
 
 # install docker
 sudo apt update
@@ -23,7 +22,7 @@ sudo add-apt-repository \
 
 # install docker
 sudo apt-get update
-sudo apt-get -y install docker-ce=${docker_version} docker-ce-cli=${docker_version} containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 # install docker service
 # sudo systemctl start docker

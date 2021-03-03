@@ -2,21 +2,23 @@
 
 application_file_path="/vagrant/installed-application.md"
 
-# install docker
-lock_filename="/var/lib/dpkg/lock-frontend"
-if [ -f "$lock_filename" ]; then
-  sudo rm -f $lock_filename
-fi
 sudo apt update
-if [ -f "$lock_filename" ]; then
-  sudo rm -f $lock_filename
-fi
-sudo apt-get -y install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
+while :
+do
+  sudo apt-get -y install \
+       apt-transport-https \
+       ca-certificates \
+       curl \
+       gnupg-agent \
+       software-properties-common
+
+  retcode=$?
+  if [ $retcode -eq 0 ]; then
+    break
+  fi
+  echo "sleep 5s ..."
+  sleep 5
+done
 
 # add Docker’s official GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -28,18 +30,17 @@ sudo add-apt-repository \
    stable"
 
 # install docker
-if [ -f "$lock_filename" ]; then
-  sudo rm -f $lock_filename
-fi
 sudo apt-get update
-if [ -f "$lock_filename" ]; then
-  sudo rm -f $lock_filename
-fi
-sudo apt-get -y install docker-ce docker-ce-cli containerd.io
-
-# install docker service
-# sudo systemctl start docker
-# sudo systemctl enable docker
+while :
+do
+  sudo apt-get -y install docker-ce docker-ce-cli containerd.io
+  retcode=$?
+  if [ $retcode -eq 0 ]; then
+    break
+  fi
+  echo "sleep 5s ..."
+  sleep 5
+done
 
 # add vagrant user to docker group
 sudo groupadd docker

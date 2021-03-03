@@ -3,7 +3,14 @@
 application_file_path="/vagrant/installed-application.md"
 
 # install docker
+lock_filename="/var/lib/dpkg/lock-frontend"
+if [ -f "$lock_filename" ]; then
+  sudo rm -f $lock_filename
+fi
 sudo apt update
+if [ -f "$lock_filename" ]; then
+  sudo rm -f $lock_filename
+fi
 sudo apt-get -y install \
     apt-transport-https \
     ca-certificates \
@@ -21,7 +28,13 @@ sudo add-apt-repository \
    stable"
 
 # install docker
+if [ -f "$lock_filename" ]; then
+  sudo rm -f $lock_filename
+fi
 sudo apt-get update
+if [ -f "$lock_filename" ]; then
+  sudo rm -f $lock_filename
+fi
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 # install docker service
